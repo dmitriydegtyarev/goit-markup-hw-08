@@ -1,0 +1,24 @@
+// import variables, mixins, placeholders and visually-hidden
+@import "./utils/variables";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+@import "./utils/visually-hidden";
+
+// import common styles. section, container
+@import "./base/common";
+@import "./base/container";
+
+// import components. logo, title, button
+@import "./components/logo";
+@import "./components/title";
+@import "./components/button";
+
+// import layout. header, hero, about_us, works, our_team, clients, footer, modal window
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/about_us";
+@import "./layout/works";
+@import "./layout/our_team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/modal_window";

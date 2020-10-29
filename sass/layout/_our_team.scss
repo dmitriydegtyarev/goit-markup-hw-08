@@ -1,0 +1,74 @@
+.team {
+  background-color: $third-background-color;
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-card {
+  padding: 30px 32px;
+  background-color: $main-background-color;
+  text-align: center;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.team-subtitle {
+  margin-bottom: 10px;
+  @include font(500, 16px, 19px);
+  color: $primary-text-color;
+}
+
+.team-position {
+  margin-bottom: 16px;
+  @include font(500, 16px, 19px);
+  color: $secondary-text-color;
+}
+
+.social-list {
+  display: flex;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: $main-background-color;
+  border-radius: 50%;
+  color: $primary-svg-color;
+  transition: background-color 250ms $main-animation, color 250ms $main-animation;
+
+  &:hover,
+  &:focus {
+    color: $third-text-color;
+    background-color: $accent-color;
+  }
+}
+
+.team-svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}

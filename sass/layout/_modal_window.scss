@@ -1,0 +1,178 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: background-color 750ms $main-animation, opacity 750ms $main-animation;
+
+  &.is-hidden {
+    background-color: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+    pointer-events: none;
+
+    .modal {
+      transform: translate(-50%, -50%) scale(0);
+    }
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  min-width: 528px;
+  min-height: 581px;
+  padding: 40px;
+  background-color: $main-background-color;
+  transition: transform 500ms $main-animation;
+
+  .title {
+    @include font(700, 20px, 23px);
+    text-align: center;
+    color: $primary-text-color;
+  }
+
+  .item:not(:last-child) {
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .item:last-child {
+    margin-bottom: 20px;
+  }
+
+  .button {
+    margin-top: 30px;
+    cursor: pointer;
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: $main-background-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover .close-modal-svg,
+  &:focus .close-modal-svg {
+    fill: $accent-color;
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}
+
+.close-modal-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  height: 11px;
+  width: 11px;
+  fill: $primary-text-color;
+  transition: fill 250ms $main-animation, transform 250ms $main-animation;
+}
+
+.input-wrapper {
+  position: relative;
+  display: block;
+}
+
+.form-svg {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+
+  width: 18px;
+  height: 18px;
+  color: transparent;
+}
+
+.label {
+  display: block;
+  @include font(400, 12px, 14px);
+  letter-spacing: 0.01em;
+  color: $secondary-text-color;
+  transition: fill 250ms $main-animation;
+
+  &:focus-within {
+    fill: $accent-color;
+  }
+}
+
+.input {
+  display: block;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  outline: none;
+  margin-top: 4px;
+  transition: border-color 250ms $main-animation;
+
+  &:focus {
+    outline: none;
+    border-color: $accent-color;
+  }
+}
+
+.input-area {
+  width: 448px;
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.checkbox {
+  display: inline-flex;
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 2px solid $primary-text-color;
+  border-radius: 4px;
+  margin-right: 8px;
+  transition: background-color 250ms $main-animation, border-color 250ms $main-animation, outline 250ms $main-animation;
+}
+
+.checkbox-hidden:focus + .checkbox {
+  outline: 2px solid $accent-color;
+  border: none;
+}
+
+.checkbox-hidden:checked + .checkbox {
+  background-color: $accent-color;
+  background-image: url(..//images/modal_window/ok.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-origin: border-box;
+  border-color: $accent-color;
+  outline: none;
+}
+
+.label-policy {
+  @include font(400, 14px, 24px);
+  color: $secondary-text-color;
+}
+
+.policy {
+  @include font(400, 14px, 24px);
+  color: $accent-color;
+}
