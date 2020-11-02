@@ -1,26 +1,26 @@
-.clients-list {
-  display: flex;
-  justify-content: space-between;
-}
+// .clients-list {
+//   display: flex;
+//   justify-content: space-between;
+// }
 
-.link-clients {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 170px;
-  height: 90px;
-  border: 1px solid $primary-svg-color;
-  border-radius: 4px;
-  color: $primary-svg-color;
-  transition: background-color 250ms $main-animation, color 250ms $main-animation;
+// .link-clients {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 170px;
+//   height: 90px;
+//   border: 1px solid $primary-svg-color;
+//   border-radius: 4px;
+//   color: $primary-svg-color;
+//   transition: background-color 250ms $main-animation, color 250ms $main-animation;
 
-  &:hover,
-  &:focus {
-    border-color: $accent-color;
-    color: $accent-color;
-  }
-}
+//   &:hover,
+//   &:focus {
+//     border-color: $accent-color;
+//     color: $accent-color;
+//   }
+// }
 
-.client-svg {
-  fill: currentColor;
-}
+// .client-svg {
+//   fill: currentColor;
+// }

@@ -1,102 +1,102 @@
-.button-portfolio {
-  display: block;
-  color: $primary-text-color;
-  background-color: $third-background-color;
-  @include font(500, 16px, 26px);
-  padding: 6px 22px;
-  text-decoration: none;
-  border-radius: 4px;
-  border: none;
-  transition: background-color 250ms $main-animation, color 250ms $main-animation;
+// .button-portfolio {
+//   display: block;
+//   color: $primary-text-color;
+//   background-color: $third-background-color;
+//   @include font(500, 16px, 26px);
+//   padding: 6px 22px;
+//   text-decoration: none;
+//   border-radius: 4px;
+//   border: none;
+//   transition: background-color 250ms $main-animation, color 250ms $main-animation;
 
-  &:hover,
-  &:focus {
-    cursor: pointer;
-    background-color: $accent-color;
-    color: $third-text-color;
-  }
-}
+//   &:hover,
+//   &:focus {
+//     cursor: pointer;
+//     background-color: $accent-color;
+//     color: $third-text-color;
+//   }
+// }
 
-.portfolio-filtrs {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+// .portfolio-filtrs {
+//   display: flex;
+//   justify-content: center;
+//   margin-bottom: 50px;
 
-  .item:not(:last-child) {
-    margin-right: 8px;
-  }
-}
+//   .item:not(:last-child) {
+//     margin-right: 8px;
+//   }
+// }
 
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
+// .portfolio-list {
+//   display: flex;
+//   flex-wrap: wrap;
 
-  .item:not(:nth-last-child(-n + 3)) {
-    margin-bottom: 30px;
-  }
+//   .item:not(:nth-last-child(-n + 3)) {
+//     margin-bottom: 30px;
+//   }
 
-  .item:not(:nth-child(3n)) {
-    margin-right: 30px;
-  }
-}
+//   .item:not(:nth-child(3n)) {
+//     margin-right: 30px;
+//   }
+// }
 
-.portfolio-title {
-  margin-bottom: 4px;
-  @include font(700, 18px, 36px);
-  letter-spacing: 0.06em;
-  color: $primary-text-color;
-}
+// .portfolio-title {
+//   margin-bottom: 4px;
+//   @include font(700, 18px, 36px);
+//   letter-spacing: 0.06em;
+//   color: $primary-text-color;
+// }
 
-.portfolio-subtitle {
-  @include font(400, 16px, 30px);
-  color: $secondary-text-color;
-}
+// .portfolio-subtitle {
+//   @include font(400, 16px, 30px);
+//   color: $secondary-text-color;
+// }
 
-.portfolio-card {
-  padding-top: 20px;
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-bottom: 20px;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-}
+// .portfolio-card {
+//   padding-top: 20px;
+//   padding-right: 24px;
+//   padding-left: 24px;
+//   padding-bottom: 20px;
+//   border-left: 1px solid #eeeeee;
+//   border-right: 1px solid #eeeeee;
+//   border-bottom: 1px solid #eeeeee;
+// }
 
-.portfolio-link {
-  transition: box-shadow 250ms $main-animation;
+// .portfolio-link {
+//   transition: box-shadow 250ms $main-animation;
 
-  &:hover,
-  &:focus {
-    display: block;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+//   &:hover,
+//   &:focus {
+//     display: block;
+//     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
-    .overlay {
-      transform: translateY(0%);
-      opacity: 1;
-    }
-  }
-}
+//     .overlay {
+//       transform: translateY(0%);
+//       opacity: 1;
+//     }
+//   }
+// }
 
-.portfolio-wrapper {
-  position: relative;
-  overflow: hidden;
-}
+// .portfolio-wrapper {
+//   position: relative;
+//   overflow: hidden;
+// }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  transform: translateY(100%);
-  transition: transform 250ms $main-animation, opacity 250ms $main-animation;
-  opacity: 0;
-  pointer-events: none;
-  padding: 63px 24px;
-  background-color: rgba(33, 150, 243, 0.9);
+// .overlay {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   transform: translateY(100%);
+//   transition: transform 250ms $main-animation, opacity 250ms $main-animation;
+//   opacity: 0;
+//   pointer-events: none;
+//   padding: 63px 24px;
+//   background-color: rgba(33, 150, 243, 0.9);
 
-  p {
-    @include font(400, 18px, 28px);
-    color: $third-text-color;
-  }
-}
+//   p {
+//     @include font(400, 18px, 28px);
+//     color: $third-text-color;
+//   }
+// }
