@@ -4,7 +4,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.container {
+.container, .button {
   margin: 0 auto;
 }
 
@@ -26,7 +26,6 @@ body {
 *::after {
   margin: 0;
   padding: 0;
-  outline: 1px solid red;
 }
 
 body {
@@ -51,26 +50,50 @@ img {
   font-style: normal;
 }
 
+.section {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+}
+
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
+  width: 100%;
+  padding: 0 15px;
 }
 
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
   }
+}
+
+.button {
+  display: block;
+  background-color: #2196f3;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
 }
 /*# sourceMappingURL=portfolio.css.map */

@@ -1,25 +1,26 @@
-// This container is used in every section on the site, besides the modal window
-
-.container {
-  @extend %ml-mr-auto;
-  padding-right: 15px;
-  padding-left: 15px;
-
-  @media screen and (min-width: 480px) {
-    max-width: 480px;
-  }
-
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
+.section {
+  padding: 60px 0;
+  background-color: $main-background-color;
 
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+    padding: 94px 0;
   }
 }
 
-// .section {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-//   background-color: $main-background-color;
-// }
+.container {
+  width: 100%;
+  padding: 0 15px;
+  @extend %ml-mr-auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
