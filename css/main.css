@@ -4,7 +4,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.container, .button, .hero-title {
+.container, .button, .hero-title, .about-list .item {
   margin: 0 auto;
 }
 
@@ -26,6 +26,7 @@ body {
 *::after {
   margin: 0;
   padding: 0;
+  outline: 2px solid red;
 }
 
 body {
@@ -154,6 +155,46 @@ img {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36364;
+  }
+}
+
+.about-subtitle {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14286;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+@media screen and (max-width: 767px) {
+  .about-subtitle {
+    text-align: center;
+  }
+}
+
+.about-idea {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71429;
+  color: #757575;
+}
+
+@media screen and (min-width: 768px) {
+  .about-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.about-list .item {
+  max-width: 270px;
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-bottom: 47px;
   }
 }
 /*# sourceMappingURL=main.css.map */
