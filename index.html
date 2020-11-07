@@ -91,16 +91,22 @@
       </div>
     </section>
     <!-- End features -->
-    <!-- what are we doing -->
+    <!-- We can make -->
     <section class="section works">
       <div class="container">
         <h2 class="title">Чем мы занимаемся</h2>
-        <ul class="works-list list">
+        <ul class="list works-list">
           <li class="item">
             <a href="">
               <picture>
-                <img src="./images/we_can_make/desktop-app.jpg" aria-label="фото процесса реализации"
-                  alt="фото процесса реализации" width="370" height="294">
+                <source srcset="
+                ./images/we_can_make/desktop-app.webp 1x, 
+                ./images/we_can_make/desktop-app@2x.webp 2x" type="image/webp">
+                <img loading="lazy" srcset="
+                ./images/we_can_make/desktop-app.jpg 1x, 
+                ./images/we_can_make/desktop-app@2x.jpg 2x" src="./images/we_can_make/desktop-app.jpg"
+                  aria-label="Разработка приложений для настольных ПК" alt="Разработка приложений для настольных ПК"
+                  width="370" height="294">
               </picture>
             </a>
             <div class="works-wrapper">
@@ -112,8 +118,14 @@
           <li class="item">
             <a href="">
               <picture>
-                <img src="./images/we_can_make/mobile-app.jpg" aria-label="фото процесса реализации"
-                  alt="фото процесса реализации" width="370" height="294">
+                <source srcset="
+                ./images/we_can_make/mobile-app.webp 1x,
+                ./images/we_can_make/mobile-app@2x.webp 2x" type="image/webp">
+                <img loading="lazy" srcset="
+                ./images/we_can_make/mobile-app.jpg 1x,
+                ./images/we_can_make/mobile-app@2x.jpg 2x" src="./images/we_can_make/mobile-app.jpg"
+                  aria-label="Разработка приложений для мобильных устройств"
+                  alt="Разработка приложений для мобильных устройств" width="370" height="294">
               </picture>
             </a>
             <div class="works-wrapper">
@@ -125,8 +137,14 @@
           <li class="item">
             <a href="">
               <picture>
-                <img src="./images/we_can_make/design-solutions.jpg" aria-label="фото процесса реализации"
-                  alt="фото процесса реализации" width="370" height="294">
+                <source srcset="
+                ./images/we_can_make/design-solutions.webp 1x,
+                ./images/we_can_make/design-solutions@2x.webp 2x" type="image/webp">
+                <img loading="lazy" srcset="
+                ./images/we_can_make/design-solutions.jpg 1x,
+                ./images/we_can_make/design-solutions@2x.jpg 2x" src="./images/we_can_make/design-solutions.jpg"
+                  aria-label="Разработка дизайнерских решений" alt="Разработка дизайнерских решений" width="370"
+                  height="294">
               </picture>
             </a>
             <div class="works-wrapper">
@@ -138,7 +156,7 @@
         </ul>
       </div>
     </section>
-    <!-- End what are we doing -->
+    <!-- End we can make -->
     <!-- Our team -->
     <!-- <section class="section team">
       <div class="container">
