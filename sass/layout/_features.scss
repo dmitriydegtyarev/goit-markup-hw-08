@@ -1,4 +1,4 @@
-.about-subtitle {
+.features-subtitle {
   margin-bottom: 10px;
   @include font(700, 14px, 16px);
   text-transform: uppercase;
@@ -9,25 +9,41 @@
   }
 }
 
-.about-idea {
+.features-idea {
   @include font(400, 14px, 24px);
   color: $secondary-text-color;
 }
 
-.about-list {
+.features-list {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1200px) {
   }
 
   .item {
     @media screen and (min-width: 768px) {
-      max-width: 354px;
+      // max-width: 354px;
+      flex-basis: calc(100% / 2 - 15px);
     }
 
     @media screen and (min-width: 1200px) {
       max-width: 270px;
+      // flex-basis: calc(100% / 4 - 23px);
+    }
+
+    &:nth-child(-n + 2) {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &:nth-child(2n + 1) {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 30px;
+      }
     }
 
     &:not(:last-child) {
@@ -42,49 +58,37 @@
   }
 }
 
-.about-item::before {
+.features-item::before {
   content: "";
   display: block;
   height: 120px;
   margin-bottom: 30px;
   background-color: $third-background-color;
   background-repeat: no-repeat;
-
-  @media screen and (max-width: 767px) {
-    max-width: 450px;
-  }
-
-  @media screen and (min-width: 768px) {
-    max-width: 354px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    max-width: 270px;
-  }
 }
 
-.about-item:nth-child(1)::before {
-  background-image: url(../images/feature1.svg);
+.features-item:nth-child(1)::before {
+  background-image: url(../images/features/feature1.svg);
   background-position: center center;
 }
 
-.about-item:nth-child(2)::before {
-  background-image: url(../images/feature2.svg);
+.features-item:nth-child(2)::before {
+  background-image: url(../images/features/feature2.svg);
   background-position: center center;
 }
 
-.about-item:nth-child(3)::before {
-  background-image: url(../images/feature3.svg);
+.features-item:nth-child(3)::before {
+  background-image: url(../images/features/feature3.svg);
   background-position: center center;
 }
 
-.about-item:nth-child(4)::before {
-  background-image: url(../images/feature4.svg);
+.features-item:nth-child(4)::before {
+  background-image: url(../images/features/feature4.svg);
   background-position: center center;
 }
 
 @media screen and (min-width: 1200px) {
-  .about {
+  .features {
     padding-bottom: 47px;
   }
 }
