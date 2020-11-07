@@ -26,7 +26,6 @@ body {
 *::after {
   margin: 0;
   padding: 0;
-  outline: 2px solid red;
 }
 
 body {
@@ -85,6 +84,24 @@ img {
   }
 }
 
+.title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17857;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16667;
+    margin-bottom: 50px;
+  }
+}
+
 .button {
   display: block;
   background-color: #2196f3;
@@ -96,6 +113,7 @@ img {
   border-radius: 4px;
   border: none;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .hero {
@@ -260,6 +278,45 @@ img {
 @media screen and (min-width: 1200px) {
   .features {
     padding-bottom: 47px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .works {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .works {
+    padding-top: 47px;
+  }
+  .works-list {
+    display: flex;
+    justify-content: center;
+  }
+  .works-list .item {
+    position: relative;
+  }
+  .works-list .item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .works-wrapper {
+    position: absolute;
+    pointer-events: none;
+    padding: 27px 80px;
+    left: 0;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+  .works-subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14286;
+    color: #ffffff;
+    text-transform: uppercase;
   }
 }
 /*# sourceMappingURL=main.css.map */
