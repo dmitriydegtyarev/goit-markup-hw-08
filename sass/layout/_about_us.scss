@@ -22,50 +22,68 @@
   }
 
   .item {
-    // max-width: 270px;
-
     @media screen and (max-width: 767px) {
-      .item {
-        max-width: 270px;
-        @extend %ml-mr-auto;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+      max-width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 270px;
+    }
+
+    &:not(:last-child) {
+      @media screen and (min-width: 1200px) {
+        margin-right: 30px;
       }
     }
   }
-
-  // .item:not(:last-child) {
-  //   margin-right: 30px;
-  // }
 }
 
 .about-item::before {
   content: "";
   display: block;
   height: 120px;
-  width: 270px;
   margin-bottom: 30px;
   background-color: $third-background-color;
   background-repeat: no-repeat;
+
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+  }
 }
 
-// .about-item:nth-child(1)::before {
-//   background-image: url(../images/feature1.svg);
-//   background-position: center center;
-// }
+.about-item:nth-child(1)::before {
+  background-image: url(../images/feature1.svg);
+  background-position: center center;
+}
 
-// .about-item:nth-child(2)::before {
-//   background-image: url(../images/feature2.svg);
-//   background-position: center center;
-// }
+.about-item:nth-child(2)::before {
+  background-image: url(../images/feature2.svg);
+  background-position: center center;
+}
 
-// .about-item:nth-child(3)::before {
-//   background-image: url(../images/feature3.svg);
-//   background-position: center center;
-// }
+.about-item:nth-child(3)::before {
+  background-image: url(../images/feature3.svg);
+  background-position: center center;
+}
 
-// .about-item:nth-child(4)::before {
-//   background-image: url(../images/feature4.svg);
-//   background-position: center center;
-// }
+.about-item:nth-child(4)::before {
+  background-image: url(../images/feature4.svg);
+  background-position: center center;
+}
 
 @media screen and (min-width: 1200px) {
   .about {
