@@ -192,6 +192,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-address {
+    margin-right: 70px;
+  }
+}
+
 .footer-subtitle {
   display: block;
   margin-bottom: 20px;
@@ -219,6 +225,12 @@ img {
     text-align: center;
     margin-top: 5px;
     margin-right: 74px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social-list {
+    margin-top: 12px;
   }
 }
 
@@ -250,6 +262,12 @@ img {
 @media screen and (max-width: 1199px) {
   .footer-form {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    margin-top: 12px;
   }
 }
 
@@ -295,6 +313,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer-wrapper .form-input {
+    width: 358px;
     margin-right: 12px;
   }
 }
