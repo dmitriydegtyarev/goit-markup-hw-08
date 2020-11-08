@@ -1,26 +1,66 @@
-// .clients-list {
-//   display: flex;
-//   justify-content: space-between;
-// }
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-// .link-clients {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   width: 170px;
-//   height: 90px;
-//   border: 1px solid $primary-svg-color;
-//   border-radius: 4px;
-//   color: $primary-svg-color;
-//   transition: background-color 250ms $main-animation, color 250ms $main-animation;
+  .item {
+    @media screen and (max-width: 767px) {
+      width: 210px;
+    }
 
-//   &:hover,
-//   &:focus {
-//     border-color: $accent-color;
-//     color: $accent-color;
-//   }
-// }
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
 
-// .client-svg {
-//   fill: currentColor;
-// }
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
+
+    &:nth-child(-n + 3) {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &:nth-child(2) {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+    }
+
+    &:nth-child(5) {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+    }
+
+    &:not(:last-child) {
+      @media screen and (min-width: 1200px) {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+.link-clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  border: 1px solid $primary-svg-color;
+  border-radius: 4px;
+  color: $primary-svg-color;
+  transition: background-color 250ms $main-animation, color 250ms $main-animation;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    color: $accent-color;
+  }
+}
+
+.client-svg {
+  fill: currentColor;
+}
