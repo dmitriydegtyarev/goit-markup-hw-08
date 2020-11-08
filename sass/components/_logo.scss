@@ -1,14 +1,18 @@
-// .logo {
-//   font-family: $secondary-font;
-//   @include font(700, 26px, 31px);
-//   color: #2196f3;
-//   text-decoration: none;
+.logo {
+  font-family: $secondary-font;
+  @include font(700, 24px, 28px);
+  color: #2196f3;
+  text-decoration: none;
 
-//   &-header {
-//     color: #000000;
-//   }
+  @media screen and (min-width: 1200px) {
+    @include font(700, 26px, 31px);
+  }
 
-//   &-footer {
-//     color: $third-text-color;
-//   }
-// }
+  &-header {
+    color: #000000;
+  }
+
+  &-footer {
+    color: $third-text-color;
+  }
+}
