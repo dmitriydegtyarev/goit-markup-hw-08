@@ -456,19 +456,31 @@ img {
 
 @media screen and (max-width: 767px) {
   .clients-list .item {
-    width: 210px;
+    flex-basis: calc(100% / 2 - 15px);
   }
 }
 
 @media screen and (min-width: 768px) {
   .clients-list .item {
-    width: 226px;
+    flex-basis: calc(100% / 3 - 20px);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .clients-list .item {
-    width: 170px;
+    flex-basis: calc(100% / 6 - 25px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .clients-list .item:nth-child(-n + 4) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .clients-list .item:nth-child(2n + 1) {
+    margin-right: 30px;
   }
 }
 
