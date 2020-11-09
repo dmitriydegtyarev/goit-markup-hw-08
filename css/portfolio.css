@@ -209,7 +209,7 @@ img {
 
 @media screen and (max-width: 479px) {
   .menu-container {
-    padding: 20px 46px;
+    padding: 50px 60px;
   }
 }
 
@@ -301,6 +301,15 @@ img {
   border-radius: 2px;
 }
 
+@media screen and (max-width: 767px) {
+  .list-nav .current::after {
+    margin-top: 8px;
+    max-width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .list-nav .current::after {
     margin-top: 28px;
@@ -334,8 +343,6 @@ img {
 @media screen and (max-width: 767px) {
   .contacts {
     margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -374,6 +381,14 @@ img {
   color: #757575;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .address-list .link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.16667;
+  }
 }
 
 @media screen and (min-width: 768px) {
