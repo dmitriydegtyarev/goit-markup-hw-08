@@ -81,6 +81,42 @@
 .site-nav {
   display: flex;
 
+  // .link {
+  //   display: block;
+  //   color: $primary-text-color;
+  //   letter-spacing: 0.02em;
+  //   transition: color 250ms $main-animation;
+
+  //   @media screen and (max-width: 767px) {
+  //     @include font(500, 18px, 21px);
+  //   }
+
+  //   @media screen and (min-width: 768px) {
+  //     @include font(500, 14px, 16px);
+  //     padding-top: 32px;
+  //   }
+
+  //   @media screen and (min-width: 1200px) {
+  //   }
+
+  //   &.current {
+  //     color: $accent-color;
+  //   }
+
+  //   &.not-current {
+  //     @media screen and (min-width: 768px) {
+  //       padding-bottom: 32px;
+  //     }
+  //   }
+
+  //   &:hover,
+  //   &:focus {
+  //     color: $accent-color;
+  //   }
+  // }
+}
+
+.list-nav {
   .link {
     display: block;
     color: $primary-text-color;
@@ -114,9 +150,7 @@
       color: $accent-color;
     }
   }
-}
 
-.list-nav {
   @media screen and (max-width: 767px) {
     text-align: center;
   }
@@ -127,7 +161,7 @@
 
   .current::after {
     content: "";
-    display: inline-block;
+    display: block;
     height: 4px;
     width: 100%;
     background-color: $accent-color;
@@ -144,34 +178,34 @@
     }
   }
 
-  .address-list {
-    // display: flex;
-    // margin-left: auto;
-    @media screen and (min-width: 768px) {
-      // display: flex;
-      // margin-left: auto;
-    }
+  // .address-list {
+  // display: flex;
+  // margin-left: auto;
+  // @media screen and (min-width: 768px) {
+  //   // display: flex;
+  //   // margin-left: auto;
+  // }
 
-    .item:not(:first-child) {
-      margin-left: 50px;
-    }
+  // .item:not(:first-child) {
+  //   margin-left: 50px;
+  // }
 
-    .link {
-      display: flex;
-      align-items: center;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      color: $secondary-text-color;
-      @include font(500, 14px, 16px);
-      letter-spacing: 0.02em;
-      transition: color 250ms $main-animation;
+  //   .link {
+  //     display: flex;
+  //     align-items: center;
+  //     padding-top: 20px;
+  //     padding-bottom: 20px;
+  //     color: $secondary-text-color;
+  //     @include font(500, 14px, 16px);
+  //     letter-spacing: 0.02em;
+  //     transition: color 250ms $main-animation;
 
-      &:hover,
-      &:focus {
-        color: $accent-color;
-      }
-    }
-  }
+  //     &:hover,
+  //     &:focus {
+  //       color: $accent-color;
+  //     }
+  //   }
+  // }
 }
 
 .header-icon {
