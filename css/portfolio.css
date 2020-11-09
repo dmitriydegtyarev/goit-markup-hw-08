@@ -32,6 +32,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;

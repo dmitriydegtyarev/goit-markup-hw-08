@@ -11,6 +11,10 @@ body {
   @extend %body-font;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
