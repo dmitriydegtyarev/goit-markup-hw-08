@@ -71,24 +71,12 @@
   }
 
   @media screen and (min-width: 768px) {
-    // display: flex;
-    // justify-content: flex-start;
-
-    // align-items: center;
-    // justify-content: center;
-
-    // flex-grow: 1;
-  }
-  @media screen and (min-width: 1200px) {
     display: flex;
-    // justify-content: space-around;
-    // justify-content: flex-end;
   }
 }
 
 .site-nav {
   display: flex;
-  // justify-content: space-between;
 }
 
 .list-nav {
@@ -177,31 +165,33 @@
   margin-right: 305px;
 }
 
-// .contacts {
-//   margin-left: auto;
-// }
-
 .address-list {
   @media screen and (min-width: 1200px) {
     display: flex;
-    // align-items: center;
   }
 
-  // .link {
-  //   display: flex;
-  //   align-items: center;
-  //   padding-top: 20px;
-  //   padding-bottom: 20px;
-  //   color: $secondary-text-color;
-  //   @include font(500, 14px, 16px);
-  //   letter-spacing: 0.02em;
-  //   transition: color 250ms $main-animation;
+  .item.item:not(:last-child) {
+    margin-right: 30px;
+  }
 
-  //   &:hover,
-  //   &:focus {
-  //     color: $accent-color;
-  //   }
-  // }
+  .link {
+    // display: block;
+    // margin-top: auto;
+    // margin-bottom: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 20px;
+    color: $secondary-text-color;
+    @include font(500, 14px, 16px);
+    letter-spacing: 0.02em;
+    transition: color 250ms $main-animation;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
 }
 
 .header-icon {
