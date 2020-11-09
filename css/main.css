@@ -312,13 +312,6 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .list-nav .address-list {
-    display: flex;
-    margin-left: auto;
-  }
-}
-
 .list-nav .address-list .item:not(:first-child) {
   margin-left: 50px;
 }
