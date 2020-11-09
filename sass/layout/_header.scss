@@ -71,19 +71,24 @@
   }
 
   @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-    // justify-content: space-between;
+    // display: flex;
+    // justify-content: flex-start;
+
+    // align-items: center;
+    // justify-content: center;
 
     // flex-grow: 1;
   }
   @media screen and (min-width: 1200px) {
-    justify-content: space-around;
+    display: flex;
+    // justify-content: space-around;
+    // justify-content: flex-end;
   }
 }
 
 .site-nav {
   display: flex;
+  // justify-content: space-between;
 }
 
 .list-nav {
@@ -163,44 +168,40 @@
   //   .link {
   //     display: flex;
   //     //     align-items: center;
-  //     padding-top: 20px;
-  //     padding-bottom: 20px;
-  //     color: $secondary-text-color;
-  //     @include font(500, 14px, 16px);
-  //     letter-spacing: 0.02em;
-  //     transition: color 250ms $main-animation;
 
-  //     &:hover,
-  //     &:focus {
-  //       color: $accent-color;
-  //     }
   //   }
   // }
 }
 
-.contacts {
-  margin-left: 304px;
+.navigation {
+  margin-right: 305px;
 }
+
+// .contacts {
+//   margin-left: auto;
+// }
 
 .address-list {
   @media screen and (min-width: 1200px) {
     display: flex;
-    align-items: center;
+    // align-items: center;
   }
 
-  .link {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: $secondary-text-color;
-    @include font(500, 14px, 16px);
-    letter-spacing: 0.02em;
-    transition: color 250ms $main-animation;
+  // .link {
+  //   display: flex;
+  //   align-items: center;
+  //   padding-top: 20px;
+  //   padding-bottom: 20px;
+  //   color: $secondary-text-color;
+  //   @include font(500, 14px, 16px);
+  //   letter-spacing: 0.02em;
+  //   transition: color 250ms $main-animation;
 
-    &:hover,
-    &:focus {
-      color: $accent-color;
-    }
-  }
+  //   &:hover,
+  //   &:focus {
+  //     color: $accent-color;
+  //   }
+  // }
 }
 
 .header-icon {
