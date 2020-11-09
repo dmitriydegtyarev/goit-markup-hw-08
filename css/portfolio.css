@@ -67,7 +67,8 @@ img {
 
 .container {
   width: 100%;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media screen and (min-width: 480px) {
@@ -322,8 +323,10 @@ img {
   }
 }
 
-.contacts {
-  margin-top: 21px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    margin-top: 21px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -338,8 +341,10 @@ img {
   }
 }
 
-.address-list .item.item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .address-list .item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .address-list .link {
