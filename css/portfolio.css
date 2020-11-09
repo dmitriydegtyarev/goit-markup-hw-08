@@ -317,6 +317,10 @@ img {
   }
 }
 
+.contacts {
+  margin-left: 304px;
+}
+
 @media screen and (min-width: 1200px) {
   .address-list {
     display: flex;
