@@ -55,13 +55,15 @@ img {
 }
 
 .section {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #ffffff;
 }
 
 @media screen and (min-width: 1200px) {
   .section {
-    padding: 94px 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -305,6 +307,12 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .list-nav .item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .list-nav .item:not(:last-child) {
     margin-right: 50px;
@@ -323,14 +331,28 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .contacts {
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts {
     margin-top: 21px;
   }
 }
 
+@media screen and (max-width: 767px) {
+  .address-list .item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .address-list .item.item:not(:last-child) {
+  .address-list .item:not(:last-child) {
     margin-bottom: 10px;
   }
 }
@@ -349,7 +371,6 @@ img {
 
 .address-list .link {
   display: flex;
-  align-items: center;
   color: #757575;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
