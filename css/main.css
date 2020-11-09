@@ -326,6 +326,12 @@ img {
   margin-top: 21px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .address-list .item.item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .address-list {
     display: flex;
