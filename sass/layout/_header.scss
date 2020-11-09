@@ -3,28 +3,30 @@
   border-bottom: 1px solid #ececec;
   background-color: $main-background-color;
 
-  // .container {
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: space-between;
-  // }
-
   .logo {
-    // padding-top: 20px;
-    // padding-bottom: 20px;
-    display: block;
-    margin-top: auto;
-    margin-bottom: auto;
-    // margin-right: 93px;
+    @media screen and (max-width: 767px) {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding-top: 26px;
+      padding-bottom: 26px;
+      margin-right: 88px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 24px;
+      padding-bottom: 25px;
+      margin-right: 93px;
+    }
   }
 }
 
 .menu-button {
-  display: inline-flex;
+  display: block;
   margin-left: auto;
-  // justify-content: flex-end;
-  // align-items: center;
-
+  outline: none;
   border: none;
   background-color: transparent;
 
@@ -47,6 +49,14 @@
 
 .menu-container {
   background-color: $main-background-color;
+
+  @media screen and (max-width: 479px) {
+    padding: 20px 46px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    padding: 60px 140px;
+  }
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -72,18 +82,30 @@
 
   .link {
     display: block;
-    padding-top: 32px;
     color: $primary-text-color;
-    @include font(500, 14px, 16px);
     letter-spacing: 0.02em;
     transition: color 250ms $main-animation;
+
+    @media screen and (max-width: 767px) {
+      @include font(500, 18px, 21px);
+    }
+
+    @media screen and (min-width: 768px) {
+      @include font(500, 14px, 16px);
+      padding-top: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    }
 
     &.current {
       color: $accent-color;
     }
 
     &.not-current {
-      padding-bottom: 32px;
+      @media screen and (min-width: 768px) {
+        padding-bottom: 32px;
+      }
     }
 
     &:hover,
@@ -94,46 +116,52 @@
 }
 
 .list-nav {
-  display: flex;
-
-  .current::after {
-    content: "";
-    display: block;
-    height: 4px;
-    width: 100%;
-    margin-top: 28px;
-    background-color: $accent-color;
-    border-radius: 2px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
   }
 
-  .item:not(:last-child) {
-    margin-right: 50px;
-  }
-}
-
-.address-list {
-  display: flex;
-  margin-left: auto;
-
-  .item:not(:first-child) {
-    margin-left: 50px;
-  }
-
-  .link {
+  @media screen and (min-width: 768px) {
     display: flex;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: $secondary-text-color;
-    @include font(500, 14px, 16px);
-    letter-spacing: 0.02em;
-    transition: color 250ms $main-animation;
-
-    &:hover,
-    &:focus {
-      color: $accent-color;
-    }
   }
+
+  //   .current::after {
+  //     content: "";
+  //     display: block;
+  //     height: 4px;
+  //     width: 100%;
+  //     margin-top: 28px;
+  //     background-color: $accent-color;
+  //     border-radius: 2px;
+  //   }
+
+  //   .item:not(:last-child) {
+  //     margin-right: 50px;
+  //   }
+  // }
+
+  // .address-list {
+  //   display: flex;
+  //   margin-left: auto;
+
+  //   .item:not(:first-child) {
+  //     margin-left: 50px;
+  //   }
+
+  //   .link {
+  //     display: flex;
+  //     align-items: center;
+  //     padding-top: 20px;
+  //     padding-bottom: 20px;
+  //     color: $secondary-text-color;
+  //     @include font(500, 14px, 16px);
+  //     letter-spacing: 0.02em;
+  //     transition: color 250ms $main-animation;
+
+  //     &:hover,
+  //     &:focus {
+  //       color: $accent-color;
+  //     }
+  //   }
 }
 
 .header-icon {
