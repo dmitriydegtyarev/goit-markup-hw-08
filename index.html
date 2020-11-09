@@ -18,6 +18,14 @@
       <nav class="site-nav">
         <a class="logo" href="./index.html" aria-label="логотип вэб студии">Web<span
             class="logo-header">Studio</span></a>
+        <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container"
+          data-menu-button>
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-open-menu" href="./images/sprite.svg#open-menu"></use>
+            <use class="icon-close-menu" href="./images/sprite.svg#close-menu"></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu></div>
         <ul class="list list-nav">
           <li class="item">
             <a class="link current" href="./index.html">Студия</a>
@@ -595,7 +603,8 @@
     </div>
   </div>
   <!-- End modal window -->
-  <script src="./JS/modal.js"></script>
+  <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>

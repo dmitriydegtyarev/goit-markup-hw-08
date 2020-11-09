@@ -146,6 +146,7 @@ img {
 }
 
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
   background-color: #ffffff;
 }
@@ -189,6 +190,39 @@ img {
 
 .site-nav .link:hover, .site-nav .link:focus {
   color: #2196f3;
+}
+
+.menu-button {
+  display: inline-flex;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-close-menu {
+  display: none;
+}
+
+.menu-button.is-open .icon-close-menu {
+  display: block;
+}
+
+.menu-button.is-open .icon-open-menu {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 60px 140px;
+  text-align: center;
+}
+
+.menu-container.is-open {
+  display: block;
 }
 
 .list-nav {
