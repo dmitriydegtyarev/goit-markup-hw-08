@@ -217,6 +217,7 @@ img {
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .menu-container {
     padding: 60px 140px;
+    z-index: 1;
   }
 }
 
